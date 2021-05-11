@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pint</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="dist/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav class="menu-nav">
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-bits"><a href="#">Shop</a></li>
+        <li class="nav-bits"><a href="#">Blog</a></li>
+        <li class="nav-bits"><a href="#">About Us</a></li>
+        <li class="nav-bits"><a href="#">FAQ</a></li>
+        <li class="nav-bits"><a href="#">Contact</a></li>
+      </ul>
+      <a href="#"><img class="nav-logo" src="/Assets/Asset 1.svg" /></a>
+      <div class="nav-search">
+        <label for="pint-search-query">
+          <input
+            id="pint-search"
+            type="search"
+            name="pint-search-query"
+            value
+            placeholder="Search pints..."
+            list="beer-type"
+          />
+        </label>
+        <datalist id="beer-type">
+          <option value="Ale"></option>
+          <option value="IPA"></option>
+          <option value="Imperial"></option>
+          <option value="Pilsner"></option>
+          <option value="Sour"></option>
+        </datalist>
+      </div>
+    </nav>
+    <header>
+      <section class="hero-box">
+        <div class="hero-img">
+          <div class="hero-text">
+            <h1>Keep the Good Times going!</h1>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>

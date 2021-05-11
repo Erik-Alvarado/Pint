@@ -1,0 +1,39 @@
+#beer-list {
+  border: 1px red solid;
+}
+.hero-box {
+  // background: green;
+  display: flex;
+  justify-content: center;
+  max-height: 700px;
+}
+.hero-img {
+  background-image: url("/Assets/wil-stewart-UErWoQEoMrc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 90%;
+  justify-content: flex-end;
+  display: flex;
+  overflow: hidden;
+}
+
+.hero-text {
+  background: orange;
+  height: 120%;
+  align-items: center;
+  display: flex;
+  transform: rotateZ(10deg);
+  width: 45%;
+  padding: 25px;
+  margin-right: -55px;
+  margin-top: -55px;
+}
+
+.hero-text h1 {
+  transform: rotateZ(-10deg);
+  font-size: 7rem;
+  margin-left: -300px;
+  margin-top: 50px;
+}
+// End Header

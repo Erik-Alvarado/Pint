@@ -1,0 +1,77 @@
+.menu-nav {
+  padding: 10px 20px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5%);
+}
+.nav-links {
+  position: absolute;
+  background: #f2f2f2;
+  height: 400px;
+  width: 180px;
+  top: 70px;
+  left: 0px;
+}
+.hamburger div {
+  background-color: orange;
+  margin: 5px 0px;
+  height: 4px;
+  width: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+#pint-search {
+  border: 0;
+  padding: 5px 5px 5px 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.13%);
+}
+// .hamburger div:active {
+//   .hamburger div:first-child {
+//     transform: rotateX(45deg);
+//   }
+//   .hamburger div:nth-child(2) {
+//     o: none;
+//   }
+//   .hamburger div:last-child {
+//     transform: rotateX(45deg);
+//   }
+// }
+.menu-nav a {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.nav-logo {
+  width: 35%;
+}
+.nav-bits {
+  display: flex;
+  margin-left: 20px;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 30px;
+}
+
+.nav-bits a {
+  color: orange;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+.nav-bits a:hover {
+  color: orangered;
+  transition: ease-in-out 0.25s;
+}
+.nav-search {
+  text-decoration: none;
+}
+
+// End Menus
