@@ -1,0 +1,39 @@
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+
+  .hero-card {
+    background: orangered;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+
+    .card-top {
+      background-image: url(/Assets/18753.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-x: center;
+      height: 100%;
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .card-bot {
+      background: #f2f2f2;
+      border-radius: 10px 10px 0 0;
+      height: 50%;
+      position: relative;
+      z-index: 2;
+      bottom: -200px;
+    }
+  }
+}
