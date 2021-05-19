@@ -1,24 +1,22 @@
 .hero-container {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 20px auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px auto;
 
   .hero-card {
-    background: orangered;
     height: 400px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
+    width: 350px;
     position: relative;
     z-index: 1;
+    animation: slideUp 0.75s ease-in;
 
     .card-top {
       background-image: url(/Assets/18753.png);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position-x: center;
-      height: 100%;
+      height: 90%;
       position: absolute;
       z-index: 3;
       top: 0;
@@ -29,11 +27,34 @@
 
     .card-bot {
       background: #f2f2f2;
-      border-radius: 10px 10px 0 0;
+      border-radius: 10px;
       height: 50%;
       position: relative;
       z-index: 2;
       bottom: -200px;
+      justify-content: center;
+      display: flex;
     }
+    .card-bot h3 {
+      font-size: 1.5rem;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+.search-box {
+  margin-top: 20px;
+
+  & h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  & hr {
+    width: 5%;
+    margin: 0 auto;
+    height: 3px;
+    margin-top: 10px;
+    background: #7373735c;
+    border: none;
   }
 }

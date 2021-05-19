@@ -1,0 +1,16 @@
+.info {
+  display: flex;
+  justify-content: space-around;
+  height: 250px;
+
+  &__text {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+  }
+  &__focusImg {
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+  }
+}

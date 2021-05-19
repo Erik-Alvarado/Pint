@@ -95,7 +95,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
-  width: 90%;
+  width: 100%;
   justify-content: flex-end;
   display: flex;
   overflow: hidden;
@@ -105,6 +105,8 @@ body {
   background: orange;
   height: 120%;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   display: flex;
   transform: rotateZ(10deg);
   width: 45%;
@@ -115,34 +117,49 @@ body {
 
 .hero-text h1 {
   transform: rotateZ(-10deg);
-  font-size: 7rem;
-  margin-left: -300px;
-  margin-top: 50px;
+  font-size: 5.75rem;
+  margin-left: -250px;
+  background: #ffffff8f;
+  padding: 0px 30px 10px 20px;
+}
+
+.hero-text button {
+  transform: rotateZ(-10deg);
+  padding: 5px 20px;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  transition: ease-in-out 0.25s;
+  font-size: 1.5rem;
+}
+
+.hero-text button:hover {
+  border: 2px solid #c17221;
+  color: #c17221;
 }
 
 .hero-container {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 20px auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px auto;
 }
 
 .hero-container .hero-card {
-  background: orangered;
   height: 400px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
+  width: 350px;
   position: relative;
   z-index: 1;
+  animation: slideUp 0.75s ease-in;
 }
 
 .hero-container .hero-card .card-top {
   background-image: url(/Assets/18753.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position-x: center;
-  height: 100%;
+  height: 90%;
   position: absolute;
   z-index: 3;
   top: 0;
@@ -153,10 +170,63 @@ body {
 
 .hero-container .hero-card .card-bot {
   background: #f2f2f2;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   height: 50%;
   position: relative;
   z-index: 2;
   bottom: -200px;
+  justify-content: center;
+  display: flex;
+}
+
+.hero-container .hero-card .card-bot h3 {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.search-box {
+  margin-top: 20px;
+}
+
+.search-box h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.search-box hr {
+  width: 5%;
+  margin: 0 auto;
+  height: 3px;
+  margin-top: 10px;
+  background: #7373735c;
+  border: none;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  height: 250px;
+}
+
+.info__text {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+}
+
+.info__focusImg {
+  background-color: pink;
+  height: 50px;
+  width: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
